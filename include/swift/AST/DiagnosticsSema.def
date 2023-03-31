@@ -1380,7 +1380,7 @@ ERROR(member_shadows_global_function,none,
 
 ERROR(instance_member_use_on_type,none,
       "instance member %1 cannot be used on type %0; "
-      "did you mean to use a value of this type instead?", (Type, DeclNameRef))
+      ""Instance method cannot be called from static context", (Type, DeclNameRef))
 ERROR(instance_member_in_initializer,none,
       "cannot use instance member %0 within property initializer; "
       "property initializers run before 'self' is available", (DeclNameRef))
